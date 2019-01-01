@@ -4,7 +4,7 @@ const Navbar = props => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <NavLink className="navbar-brand" to = "/">
-        Vimlesh Singh
+       {props.person.name}
       </NavLink>
       <button
         className="navbar-toggler"

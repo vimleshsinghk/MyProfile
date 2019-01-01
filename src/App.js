@@ -13,7 +13,7 @@ class App extends Component {
       <BrowserRouter>
         <Fragment>
           <div className="App">
-            <NavBar />
+            <NavBar person={{name:"Vimlesh Singh"}}/>
             <header className="App-header">
               <Switch>
                 <Route path="/home" component={Home} />
