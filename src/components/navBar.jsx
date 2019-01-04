@@ -3,10 +3,14 @@ import NavLinkBtn from "./smallComponents/navlinkBtn";
 const Navbar = props => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <NavLinkBtn className="navbar-brand" link ="home"  name = {props.person.name}/>
-  
+      <NavLinkBtn
+        className="navbar-brand"
+        link="home"
+        name={props.person.name}
+      />
+
       <button
-        className="navbar-toggler"
+        className="navbar-toggler collapsed"
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
@@ -14,7 +18,10 @@ const Navbar = props => {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon" />
+        <div className="navbar-toggler-bar first-bar" />
+        <div className="navbar-toggler-bar second-bar" />
+        <div className="navbar-toggler-bar third-bar" />
+       
       </button>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
