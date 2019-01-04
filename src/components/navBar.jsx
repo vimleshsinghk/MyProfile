@@ -1,11 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import NavLinkBtn from "./smallComponents/navlinkBtn";
 const Navbar = props => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <NavLink className="navbar-brand" to = "/">
-       {props.person.name}
-      </NavLink>
+      <NavLinkBtn className="navbar-brand" link ="home"  name = {props.person.name}/>
+  
       <button
         className="navbar-toggler"
         type="button"
@@ -21,19 +20,13 @@ const Navbar = props => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
-            <NavLink className="nav-link"to="/home">
-              Home <span className="sr-only">(current)</span>
-            </NavLink>
+            <NavLinkBtn link="home" name="Home" />
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link"to="/about">
-              About
-            </NavLink>
+            <NavLinkBtn link="about" name="About" />
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link"to="/contact">
-              Contact
-            </NavLink>
+            <NavLinkBtn link="contact" name="Contact" />
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0">
